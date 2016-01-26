@@ -1,8 +1,7 @@
 # Reshape this data so that we have one record (row) per alternate allele.
 #
-# Note that the new BigQuery feature of user-defined javascript
-# functions is in limited preview.  For more info, see
-# https://www.youtube.com/watch?v=GrD7ymUPt3M#t=1377
+# This query uses BigQuery user-defined javascript functions
+# https://cloud.google.com/bigquery/user-defined-functions
 #
 # This approach will work for all the fields.  The example below includes
 # a handful of fields just for demonstration purposes.
@@ -20,7 +19,7 @@ FROM js(
   {"name": "AC_NFE", "type": "INTEGER"}
   ]',
   "function(r, emit) {
-  for(var alt = 1; alt <= r.alternate_bases.length; alt++) {
+  for(var alt = 0; alt <= r.alternate_bases.length; alt++) {
     emit({
           reference_name: r.reference_name,
           start: r.start,
