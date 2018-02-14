@@ -7,3 +7,5 @@ Codelabs in various languages demonstrating usage of several tools &amp; systems
 [![Google Genomics: Data Analysis Overview](http://img.youtube.com/vi/vINpqxhcTt0/0.jpg)](http://www.youtube.com/watch?v=vINpqxhcTt0)
 
 * Clone this repository to run the codelabs yourself!
+
+[![Open this repo in Google Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/deflaux/codelabs&page=editor&open_in_editor=README.md)
